@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hakim portfolio website</title>
+        <link rel="icon" type="image/png" href="./asset/image/logo1.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="./asset/css/styles.css">
+</head>
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div id="nav">
+                <div>
+                    <a class="nav__logo"><span style="color: #4070f4;">HA</span>KIM</a>
+                </div>
+                <div class="nav__menu" id="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Languages</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li> 
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav__toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <div id="custom-alert"></div>
+    
+    
+    
+    <main class="l.main">
+        <section class="home bd-grid" style="margin-top: -50px;" id="home">
+            <div class="home__data" style="margin-top: 150px;">
+                <h1 class="home__title"> Hi, <br>I'am <span class="home__title-color" id="name"></span><br> Full stack developer</h1>
+                <form action="#contact">
+                    <input type="submit" class="button"  value="Contact" style="margin-right: 15px;">
+                    <a href="https://drive.google.com/file/d/1udDK2sKY5ux3IKafzU2w9f82GJ5Oj4cz/view?usp=sharing" target="_blank" class="button-5">Download CV</a>
+
+                </form>
+                <div class="icon__social">
+                    <a href="https://www.linkedin.com/in/abdelhakim-khayati-b40b17253/" class="home__social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AbdelhakimKhayati" class="home__social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="home__social-icon"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="home__social  wrapper">
+                <img src="./asset/image/image7.png" class="one home__title" alt="hh">
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="./asset/image/image2.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="about__subtitle">I'm Abdelhakim Khayati</h2>
+                    <p class="about__text">I am a passionate and skilled full-stack developer with expertise in HTML, CSS, JavaScript, React, Bootstrap, PHP, Laravel, MySQL, and NoSQL. I have a keen eye for creating visually appealing and responsive front-end interfaces while architecting robust and scalable applications on the back-end. With a focus on clean and maintainable code, I am dedicated to delivering innovative and user-centric web experiences. My collaborative nature and problem-solving skills make me a valuable asset in cross-functional teams. Outside of coding, I enjoy staying up-to-date with tech trends, participating in hackathons, and contributing to the tech community through writing and engagement. Let's connect and work together to create remarkable projects!</p>
+                </div>
+            </div>
+        </section>
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Languages</h2>
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Languages</h2>
+                    <div class="skills__data">
+                        <div class="skills__data-names">
+                            <i class="fa-solid fa-a skills__icon"></i>
+                            <span class="skills__name">Arabic</span>
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__data-names">
+                            <i class="fa-solid fa-f skills__icon"></i>
+                            <span class="skills__name">French</span>
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">60%</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__data-names">
+                            <i class="fa-solid fa-e skills__icon"></i>
+                            <span class="skills__name">English</span>
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">40%</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./asset/image/image3.jpg" alt="" class="skills__img">
+                </div>
+
+            </div>
+        </section>
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+            <div class="work__container bd-grid">
+                <div class="work__img">
+                    <img src="./asset/image/image4.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="./asset/image/image5.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="./asset/image/image6.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact__container bd-grid">
+                <form method="post" class="contact__form" action="">
+                        <input type="text" class="contact__input" id="full_name" placeholder="Full Name">
+                        <input type="email" class="contact__input" id="email_id" placeholder="Email" required>
+                        <textarea class="contact__input" id="message" placeholder="Message"></textarea>
+                        <input type="submit" id="btn"  class="contact__button button" value="Send">
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <p class="footer__title"> Abdelhakim Khayati</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/abdelhakim-khayati-b40b17253/" class="footer__icon"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/AbdelhakimKhayati" class="footer__icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="footer__icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer__icon"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p class="footer__copyright">Copyright &copy; 2023</p>
+    </footer>
+    <!-- javascript -->
+    <script src="./asset/js/js.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/e6515fe9c1.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("YNXLoOneNM_7SO1Mq");
+    })();
+    </script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '80px',
+            duration: 2000,
+            reset: true
+        });
+
+        // scroll home
+        sr.reveal('.home__title', {});
+        sr.reveal('.button', { delay: 200 });
+        sr.reveal('.button-5', { delay: 200 });
+        sr.reveal('.home__img', { delay: 400 });
+        sr.reveal('.home__social-icon', { interval: 200 });
+
+        // scroll about
+        sr.reveal('.about__img', {});
+        sr.reveal('.about__subtitle', { delay: 200 });
+        sr.reveal('.about__text', { delay: 400 });
+
+        // scroll skills
+        sr.reveal('.skills__subtitle', {});
+        sr.reveal('.skills__text', { delay: 200 });
+        sr.reveal('.skills__data', { interval: 200 });
+        sr.reveal('.skills__img', { delay: 400 });
+
+        // scroll work
+        sr.reveal('.work__img', { interval: 200 });
+
+        // scroll contact
+        sr.reveal('.contact__input', { interval: 200 });
+
+        const name = "Abd El hakim"; // Remplacez "Abd El hakim" par votre nom complet
+        const nameElement = document.getElementById("name");
+
+        function typeWriter(text, element, delay) {
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, delay);
+            }
+        }
+        type();
+        }
+
+        const typingDelay = 100; // Délai entre chaque caractère (en millisecondes)
+        const startDelay = 1000; // Délai avant le début de la saisie (en millisecondes)
+
+        setTimeout(() => {
+        typeWriter(name, nameElement, typingDelay);
+        }, startDelay);
+
+    </script>
+</body>
+</html>
