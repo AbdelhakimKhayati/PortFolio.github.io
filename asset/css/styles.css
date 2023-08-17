@@ -270,6 +270,7 @@ img {
     width: 90%;
 }
 .skills__css {
+
     width: 60%;
 }
 .skills__js {
@@ -288,14 +289,17 @@ img {
     box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
     border-radius:.5rem;
     overflow: hidden;
+    height: 200px;
 }
 .work__img img {
     transition: 1s;
     cursor: pointer;
+    height: 200px;
 }
+/* 
 .work__img img:hover {
     transform: scale(1.1);
-}
+} */
 /* contact */
 .contact__input {
     width: 100%;
@@ -563,4 +567,79 @@ img {
 
 #custom-alert.error {
     background-color: #f44336; /* Error background color */
+}
+.container_btn {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+  }
+  
+  .btn_btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn_btn:hover {
+    transition: 1s ease-in-out;
+    background: #4F95DA;
+  }
+  
+  .btn_btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn_btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+.card_body_img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background-color: #05121a44;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    display: flex;
+    transition: 2s;
+}
+.card_img {
+    overflow: hidden;
+    position: relative;
+}
+.card_img:hover .card_body_img {
+    right: 0;
+}
+.btn_btn span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
